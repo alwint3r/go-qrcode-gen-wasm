@@ -7,6 +7,22 @@ QR Code generator written in Go and compiled to WebAssembly.
 
 Take user's input and generate the QR code bytes and display the result as a base64-encoded PNG image.
 
+## Running it yourself
+
+Clone this repository, then compile the code to WASM using this command
+
+```sh
+make
+```
+
+Then go to `server` directory and run the server
+
+```sh
+go run server.go
+```
+
+Then go to http://localhost:8000/wasm_exec.html
+
 ## Useful Resources
 
 * [QR Code library](https://github.com/skip2/go-qrcode)
